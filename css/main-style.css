@@ -169,7 +169,7 @@ img { max-width:100%; height:auto; }
 .quickcontact h4 { color: #333333; font-family: AvenirLTStd-Book; font-size: 23px; padding-bottom: 10px; }
 .quickcontact h4 a { color: #333333; }
 .formpro { padding: 15px 0; }
-.commform .styledSelect { background-color: #fff; background-image: none; border: 1px solid #b2b2b2; border-radius: 2px; box-shadow: none; color: #999999; display: block; font-size: 14px; height: 43px; line-height: 31px; padding: 6px 12px; }
+.commform .styledSelect { background-color: #fff; background-image: none; border: 1px solid #b2b2b2; border-radius: 4px; box-shadow: none; color: #999999; display: block; font-size: 14px; height: 43px; line-height: 31px; padding: 6px 12px; }
 .commform .options li:first-child { border-top:0; }
 .commform .options li { border-top: 1px solid #ccc; }
 .commt5 { margin-top:5px; }
@@ -260,6 +260,21 @@ div.form-control textarea { border: 0 none; resize: none; width: 100%; }
   max-width: 715px;
   padding: 30px 40px;
 }
+
+
+
+
+
+.modal .formcontainer {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 0px;
+  box-shadow: none;
+  margin: 0;
+  max-width: none;
+  padding: 0;
+}
+
+
 
 .socialbtn {
   padding-top: 24px;
@@ -478,6 +493,66 @@ div.form-control textarea { border: 0 none; resize: none; width: 100%; }
 
 
 
+.city-summary-img img {
+    height: auto;
+    width: 100%; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; 
+}
+
+
+
+.browseservice:hover .city-summary-img img {
+-ms-transform: scale(1.5,1.5); /* IE 9 */
+    -webkit-transform: scale(1.5,1.5); /* Safari */
+    transform: scale(1.5,1.5);
+
+ transition: all 0.5s ease; -webkit-transition: all 0.5s ease; 
+}
+
+
+
+
+.browseservice {
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.browseservice:hover .city-summary-text {  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;  transition: all 0.5s ease; -webkit-transition: all 0.5s ease; }
+
+
+.city-summary-text {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; 
+}
+
+.contcenter {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	 -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.city-summary-name {
+  color: #fff;
+  font-size: 27px;
+  padding-bottom: 15px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+
 
 
 
@@ -524,7 +599,7 @@ margin:auto;
  margin-left: -7px;
  margin-right: -7px;
 }
-.commform .row .col-sm-6, .commform .row .col-sm-12 {
+.commform .row .col-sm-6, .commform .row .col-sm-12, .commform .row .col-sm-4, .commform .row .col-sm-5, .commform .row .col-sm-3 {
  padding-left: 7px;
  padding-right: 7px;
 }
